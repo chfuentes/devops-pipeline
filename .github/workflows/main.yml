@@ -1,16 +1,13 @@
 name: CI Java
 
-on: 
+on:
   workflow_call:
 
-jobs:
+jobs: 
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
-
-      name: Checkout
+    
+    - name: Checkout
       uses: actions/checkout@v3.5.3
-
-      name: Descarga codigo
-      run: ls -ltr
